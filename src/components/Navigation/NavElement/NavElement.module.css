@@ -1,0 +1,24 @@
+.NavElement {
+    padding-left: 10px;
+    padding-right: 10px;
+    cursor: pointer;
+    position: relative;
+}
+.NavElement a {
+    display: block;
+    text-align: left;
+    text-decoration: none;
+    -webkit-transition: 0.25s ease-in-out;
+    -moz-transition: 0.25s ease-in-out;
+    -o-transition: 0.25s ease-in-out;
+    transition: 0.25s ease-in-out;
+}
+.NavElement a:visited {
+    color: #333;
+}
+.NavElement:hover a {
+    color: rgb(233, 56, 56);
+}
+.NavElement a span {
+    display: block;
+}

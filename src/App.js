@@ -1,26 +1,36 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Fragment } from 'react';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import Navigation from './components/Navigation/Navigation';
+import Body from './components/Body/Body';
 
-export default App;
+const menuItems = {
+    rs: [
+      "Lepota i Vi",
+      "Kuhanje na zdrav način",
+      "Kampiranje na otvorenom",
+      "Aktivirajte se",
+      "Meditacija",
+      "2 + 2 = 3",
+      "Za filmofile i knjigoljupce",
+      "Jučer danas sutra"
+    ],
+    en: [
+      "Beauty and You",
+      "Healthy Cooking",
+      "Outdoor Camping",
+      "Activate",
+      "Meditation",
+      "2 + 2 = 3",
+      "Cinephiles' and Booklovers' Corner",
+      "Yesterday Today Tomorrow"
+    ]
+};
+
+const app = () => (
+    <Fragment>
+        <Navigation NavElements={menuItems} />
+        <Body />
+    </Fragment>
+);
+
+export default app;
